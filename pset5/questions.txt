@@ -1,0 +1,23 @@
+0.  It(String constant) has been used for maximumm length allowed for any word in the text. 
+
+1. getrusage() returns resource usage measures for either calling process or its children or calling thread which is the sum of resources used by all threads in the process.  
+
+2.  16
+3.  C requires passing structs by reference in functions to avoid big size of structure to be passes because that would not be efficient.
+4.   After loading a text and a dictionary, 
+main() function starts reading a text character at a time, to construct separate words. 
+A word is completed when one or more alphabetic symbols are read, and we see a non-alphanumeric character (like spacebar, or newline). 
+Then we check our word against dictionary, set the word index to zero, and continue the loop. 
+If we see a digit, or a string is longer than 45 chars, we traverse this word in the text, but we don't check it for misspellings.
+
+5.  There are several problems with fscanf - first, we must allocate a memory for a string before reading it from file, 
+and there are no limits of a length of a word in a text file. Also we can't write program for skipping alphanumeric words, like this implementation of speller has.
+
+6.  Those parameters are never intented to be modified in the functions so they are declared as cnstant.
+7.  TRIE.In a node,there are 2 fields.
+    an array of children of type node with size equal to alphabet.
+    boolean variable to mark the end of the word.
+    
+8.  It was quite fast as I used trie which is having time complexity of O(max length of a string) for insert(load) and search(check).
+9.  No changes
+10. I didn't find as long as it loads dictionary successfully and performs the checking efficiently.
