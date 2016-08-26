@@ -1,0 +1,12 @@
+questions.txt
+
+Computer Science 50
+Problem Set 3
+
+0. side of board can be 3 to 9 i.e. 3*3 to 9*9
+
+1. 2-dimensional array
+
+2. greet() is called to greet.
+
+3. init(),draw(),move(),won()
