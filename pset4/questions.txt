@@ -1,0 +1,37 @@
+0.  BMP-Variable, depends on the number of bits specified in the header.ex-32 bit,32 million colors
+    GIF-8 bit,256 colors
+    PNG-24 bit,16 million colors
+    JPEG-24 bit,16 million colors
+1.  GIF
+2.  With lossless compression, every single bit of data that was originally in the file remains after the file is uncompressed
+    With lossy compression,some of the data in the file is thrown away.
+3.  JPEG
+4.  The information in the address table is erased, but the file itself remains on the hard drive.
+5.  We can delete files using Secure Delete option to replace section with all zeroes on the disk.
+6.  stdint.h is a header file that defines a set of integral type aliases with specific width requirements, along with macros specifying their limits.
+
+7.  We can fill up exactly the amount of space you want in a file which is good
+    for things like bitmap headers.
+
+8.  BYTE is 1 byte
+	DWORD is 4 bytes
+	LONG is 4 bytes
+    WORD is 2 bytes
+9.  The first two bytes of a BMP is a WORD and denotes bfType, which specifies the file type. It must be
+ 	set to the signature word BM (0x4D42) to indicate bitmap.
+
+10. bfSize is the total number of bytes in the file.
+    biSize is the number of bytes in the info header.
+11. If biHeight is negative, the
+     bitmap is a top-down DIB with the origin at the upper left corner.
+
+12. biBitCount
+13. If it can't find the file, it will return NULL.
+14. it is because the program is reading in 1 RGB triple at a time
+15. 3 pixels * 3 bytes per pixel = 9 bytes. 3 bytes are added to bring the scanline to 12 bytes.
+16. It moves to a specific location in a file.
+
+17. An integer constant which, when used as the 'whence' argument to the
+fseek or fseeko function, specifies that the offset provided is relative to
+the current file position.
+18. A man wearing suit
